@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Chakra Petch", serif;;
+}
+
+Header {
+    margin: 3%;
+    text-align: center;
+    background: rgb(76,29,255);
+    background: linear-gradient(32deg, rgba(76,29,255,1) 4%, rgba(145,195,255,1) 51%, rgba(0,249,255,1) 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    font-size: 2em;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: #4646a8 solid 2px;
+    border-top: #4646a8 solid 2px;
+    padding: 2% 4%;
+    margin: 1% 0;
+}
+
+.tab-container > button {
+    padding: 1% 4%;
+    font-size: 2em;
+    background: rgb(76,29,255);
+    background: linear-gradient(32deg, rgba(76,29,255,1) 4%, rgba(145,195,255,1) 51%, rgba(0,249,255,1) 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 5px transparent;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-timing-function:cubic-bezier();
+    box-sizing: border-box;
+}
+
+.tab-container > button:hover{
+    opacity: 0.8;
+    outline: #4646a8 solid 2px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 15vh;
+    font-size: 2em;
+    margin: 3% 30%;
+    border-radius: 2rem;
+    padding: 2% 0;
+    background-color: rgb(21, 20, 38);
+}
+
+.card > p {
+    background: rgb(76,29,255);
+    background: linear-gradient(32deg, rgba(76,29,255,1) 4%, rgba(145,195,255,1) 51%, rgba(0,249,255,1) 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.todo-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.todo-button > button {
+    padding: 4% 8%;
+    border-radius: 50em;
+    cursor: pointer;
+    border: #4646a8 solid 2px;
+    box-shadow: 2px 2px rgb(46, 46, 46);
+    background: rgb(76,29,255);
+    background: linear-gradient(32deg, rgba(76,29,255,1) 4%, rgba(145,195,255,1) 51%, rgba(0,249,255,1) 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.todo-button > button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.todo-button > button:hover {
+    opacity: 0.8;
+    transform: scaleX(1.1);
+}
+
+.input-container {
+    display: flex;
+    margin: 0 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container > input {
+    border-radius: 1.5em;
+    padding: 2%;
+    width: 70%;
+    margin: 0 2%;
+    font-size: 1.5rem;
+    background: transparent;
+    border: #4646a8 solid 2px;
+    color: rgb(175, 175, 255);      
+    margin-bottom: 1%;
+    outline: none;
+}
+
+.input-container > button {
+    padding: 2%;
+    border-radius: 1.5em;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px rgb(46, 46, 46);
+    background-color: transparent;
+    color: rgb(175, 175, 255);
+    margin-bottom: 1%;
+    cursor: pointer;
+    border: #4646a8 solid 2px;
+}
+
+.input-container > button:hover {
+    transform: translateX(1px);
+}
